@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color-Changer</title>
+    <style>
+     h1{
+            display: flex;
+            flex-direction: center;
+            align-items: center;
+            justify-content: center;
+            margin-top: 130px;
+        }
+        .box{
+            display: flex;
+            flex-direction: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #grey{
+        
+            border: 2px solid black;
+            height: 80px;
+            width: 80px;
+        padding: 100px;
+        margin-left: 30px;
+        background-color: grey;
+        }
+        #white{
+            border: 2px solid black;
+            height: 80px;
+            width: 80px;
+        padding: 100px;
+        margin-left: 30px;
+        background-color: white;
+        }
+        #blue{
+            border: 2px solid black;
+            height: 80px;
+            width: 80px;
+        padding: 100px;
+        margin-left: 30px;
+        background-color: blue;
+        }
+          #yellow{  
+            border: 2px solid black;
+            height: 80px;
+            width: 80px;
+        padding: 100px;
+        margin-left: 30px;
+        background-color: yellow;
+        }
+p{
+    
+             display: flex;
+            flex-direction: center;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            font-size: 30px;
+}
+    </style>
+</head>
+<body>
+    <h1 class="heading">Color Scheme Switcher</h1>
+    <div class="box">
+    <span id="grey"></span>
+    <span id="white"></span>
+    <span id="blue"></span>
+    <span id="yellow"></span></div>
+    <p>Try clicking on one of the colors above <br> to change the background color of this <br> page!
+    </p>
+</body>
+<script>    
+    const greyColour=document.getElementById("grey");
+    function changeColorToGrey(){
+    document.body.style.backgroundColor="grey";}
+    greyColour.addEventListener("click",changeColorToGrey);
+
+    const whiteColour=document.getElementById("white");
+    function changeColorToWhite(){
+    document.body.style.backgroundColor="white";}
+    whiteColour.addEventListener("click",changeColorToWhite);
+
+    const blueColour=document.getElementById("blue");
+    function changeColorToBlue(){
+    document.body.style.backgroundColor="blue";}
+    blueColour.addEventListener("click",changeColorToBlue);
+
+    const yellowColour=document.getElementById("yellow");
+    function changeColorToYellow(){
+    document.body.style.backgroundColor="yellow";}
+    yellowColour.addEventListener("click",changeColorToYellow);
+
+</script>
+</html>
